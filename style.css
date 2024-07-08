@@ -1,0 +1,144 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  /* File Upload Section */
+  .file-upload {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .file-upload h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .file-upload input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .file-upload button {
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-upload button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0%;
+    background-color: #1e88e5;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Success Message */
+  .success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: none;
+  }
+  
+  /* Room Allocation Section */
+  .room-allocation {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 30px;
+  }
+  
+  .room-allocation h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .room-allocation table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .room-allocation th,
+  .room-allocation td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .room-allocation th {
+    background-color: #1e88e5;
+    color: #fff;
+  }
+  
+  .room-allocation td {
+    font-size: 14px;
+  }
+  
+  .room-allocation button {
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .room-allocation button:hover {
+    background-color: #1565c0;
+  }
+  
