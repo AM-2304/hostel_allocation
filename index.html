@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Allocation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Hostel Allocation">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Effortless Hostel Allocation</h1>
+                <p>Streamline your hostel management with our intelligent allocation system.</p>
+                <button class="btn-primary">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/hero-image.png') }}" alt="Hostel Allocation">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <img src="{{ url_for('static', filename='images/feature-1.png') }}" alt="Feature 1">
+                <h3>Automated Allocation</h3>
+                <p>Our algorithm efficiently assigns students to rooms based on their preferences and group information.</p>
+            </div>
+            <div class="feature-item">
+                <img src="{{ url_for('static', filename='images/feature-2.png') }}" alt="Feature 2">
+                <h3>Real-Time Monitoring</h3>
+                <p>Track the allocation process and view the updated room assignments in real-time.</p>
+            </div>
+            <div class="feature-item">
+                <img src="{{ url_for('static', filename='images/feature-3.png') }}" alt="Feature 3">
+                <h3>Customizable Settings</h3>
+                <p>Tailor the allocation rules and preferences to fit your institution's specific needs.</p>
+            </div>
+        </section>
+
+        <section class="file-upload">
+            <h2>Upload Your Data</h2>
+            <form id="upload-form" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="group-file">Group Information</label>
+                    <input type="file" id="group-file" name="group-file" required>
+                </div>
+                <div class="form-group">
+                    <label for="hostel-file">Hostel Information</label>
+                    <input type="file" id="hostel-file" name="hostel-file" required>
+                </div>
+                <button type="submit" class="btn-primary">Upload</button>
+            </form>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </section>
+
+        <section class="room-allocation">
+            <h2>Room Allocation</h2>
+            <table id="allocation-table">
+                <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Hostel</th>
+                        <th>Room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Allocation data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Akhilesh's Hostel Allocation. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
