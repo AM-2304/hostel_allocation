@@ -1,7 +1,7 @@
 # Hostel Allocation Project
 
 ## Overview
-The Hostel Allocation project is a web application built using Flask, a popular Python web framework. The application helps streamline the process of allocating students to rooms in a hostel based on their group information and the available hostel data.
+The Hostel Allocation project is a web application built using Flask. The application helps streamline the process of allocating students to rooms in a hostel based on their group information and the available hostel data.
 
 ## Features
 - **Automated Allocation**: The application uses an intelligent algorithm to efficiently assign students to rooms based on their preferences and group information.
