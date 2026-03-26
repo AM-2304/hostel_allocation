@@ -43,7 +43,7 @@ The application's logic is divided between the server-side (Flask) and the clien
 - **Client-side Logic**: The JavaScript code in the `script.js` file handles the user interface interactions, such as file uploads, progress tracking, and displaying the allocation results.
 
 ## Installation and Setup
-1. Clone the repository: `git clone https://github.com/your-username/hostel-allocation.git`
+1. Clone the repository: `git clone https://github.com/AM-2304/hostel-allocation.git`
 2. Create a virtual environment: `python -m venv env`
 3. Activate the virtual environment:
    - Windows: `env\Scripts\activate`
